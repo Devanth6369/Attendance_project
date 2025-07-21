@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance App</title>
+    <script defer src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .card { background: #f8f9fa; padding: 20px; border-radius: 10px; width: 300px; margin: auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .hidden { display: none; }
+        .student-list { text-align: left; }
+        button { padding: 10px; margin-top: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Teacher: John Doe</h2>
+        <button id="takeAttendance">Take Attendance</button>
+
+        <div id="attendanceSection" class="hidden">
+            <h3>Mark Attendance</h3>
+            <div class="student-list" id="studentList"></div>
+            <button id="submitAttendance">Submit Attendance</button>
+        </div>
+    </div>
+
+</body>
+</html>
